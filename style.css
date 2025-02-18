@@ -120,13 +120,13 @@ ul li {
 
 /* Smaller images for Math and Geography */
 .flip-card[data-card="math"] .flip-card-front img {
-  width: 40%;  /* Smaller width for Math image */
-  height: 80px;  /* Smaller height for Math image */
+  width: 70%;  /* Smaller width for Math image */
+  height: 120px;  /* Smaller height for Math image */
 }
 
 .flip-card[data-card="geography"] .flip-card-front img {
-  width: 40%;  /* Smaller width for Geography image */
-  height: 80px;  /* Smaller height for Geography image */
+  width: 70%;  /* Smaller width for Geography image */
+  height: 120px;  /* Smaller height for Geography image */
 }
 
 /* Responsive Design */
