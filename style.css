@@ -41,16 +41,16 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
   padding: 10px;
+  box-sizing: border-box;
 }
 
-/* Flip Card Styling */
 .flip-card {
   background-color: transparent;
-  width: 200px;  /* Ensure all cards are the same width */
-  height: 300px; /* Ensure all cards are the same height */
+  width: 200px;
+  height: 300px;
   perspective: 1000px;
   margin-bottom: 2em;
   margin-top: 2em;
@@ -80,10 +80,6 @@ body {
 .flip-card-front {
   background-color: gold;
   color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .flip-card-back {
@@ -91,42 +87,13 @@ body {
   border: 5px solid goldenrod;
   color: darkolivegreen;
   transform: rotateY(180deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
+/* Image Styling */
 .flip-card-front img {
-  width: 80%;  /* Default size for other images */
-  height: 150px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-}
-
-h3 {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: 0.9rem;
-}
-
-ul li {
-  color: #555;
-}
-
-/* Smaller images for Math and Geography */
-.flip-card[data-card="math"] .flip-card-front img {
-  width: 70%;  /* Smaller width for Math image */
-  height: 120px;  /* Smaller height for Math image */
-}
-
-.flip-card[data-card="geography"] .flip-card-front img {
-  width: 70%;  /* Smaller width for Geography image */
-  height: 120px;  /* Smaller height for Geography image */
 }
 
 /* Responsive Design */
@@ -164,6 +131,7 @@ ul li {
     margin-bottom: 20px;
   }
 }
+
 
 
 
