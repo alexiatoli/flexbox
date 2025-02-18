@@ -98,7 +98,7 @@ body {
 }
 
 .flip-card-front img {
-  width: 100%;
+  width: 80%;  /* Default size for other images */
   height: 150px;
   object-fit: cover;
 }
@@ -116,6 +116,17 @@ ul {
 
 ul li {
   color: #555;
+}
+
+/* Smaller images for Math and Geography */
+.flip-card[data-card="math"] .flip-card-front img {
+  width: 60%;  /* Smaller width for Math image */
+  height: 120px;  /* Smaller height for Math image */
+}
+
+.flip-card[data-card="geography"] .flip-card-front img {
+  width: 60%;  /* Smaller width for Geography image */
+  height: 120px;  /* Smaller height for Geography image */
 }
 
 /* Responsive Design */
