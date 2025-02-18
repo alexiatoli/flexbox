@@ -49,8 +49,8 @@ body {
 /* Flip Card Styling */
 .flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 300px;
+  width: 200px;  /* Ensure all cards are the same width */
+  height: 300px; /* Ensure all cards are the same height */
   perspective: 1000px;
   margin-bottom: 2em;
   margin-top: 2em;
