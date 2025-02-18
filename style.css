@@ -1,15 +1,20 @@
-/* Global styles */
-body {
-    font-family: 'Montserrat', sans-serif;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Header */
 .masthead {
     background-color: gold;
     height: 75px;
     padding-top: 10px;
     font-size: x-large;
+    font-family: Montserrat, sans-serif;
+}
+
+.centeredText {
     text-align: center;
 }
 
@@ -17,8 +22,10 @@ body {
     color: black;
 }
 
-.centeredText {
-    text-align: center;
+/* Main Section */
+.main-area {
+    border: 4px solid lightgray;
+    background-color: lightgoldenrodyellow;
 }
 
 .centered {
@@ -26,12 +33,7 @@ body {
     margin-right: auto;
 }
 
-/* Main area and cards container */
-.main-area {
-    border: 4px solid lightgray;
-    background-color: lightgoldenrodyellow;
-}
-
+/* Cards Container */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +42,7 @@ body {
     padding: 5px;
 }
 
-/* Individual card styles */
+/* Individual Card */
 .card {
     background: white;
     margin-bottom: 2em;
@@ -48,6 +50,8 @@ body {
     max-height: 300px;
     flex: 1 1 200px;
     position: relative; /* to position items inside card */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card a {
@@ -55,6 +59,7 @@ body {
     text-decoration: none;
 }
 
+/* Card Content */
 .card-content {
     padding: 1.4em;
     margin-top: 0;
@@ -62,9 +67,25 @@ body {
     font-weight: normal;
 }
 
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+.card-content ul {
+    list-style-image: url("smaller_viking.gif");
+}
+
+.card-content li {
+    font-size: 0.9rem;
+}
+
+/* Image Container */
 .pixHolder {
     text-align: center;
     background-color: pink;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .pixHolder img {
@@ -74,41 +95,19 @@ body {
     border-radius: 15px;
 }
 
-h3,
-ul {
-    position: relative;
-    top: -30px;
-}
-
-ul {
-    list-style-image: url("smaller_viking.gif");
-}
-
-/* Status-based styling */
+/* Special Card Status */
 [status="important"] {
     border: 6px dashed green;
 }
 
 [status="done"]::before {
-    content: "\2713"; /* Unicode checkmark */
+    content: "\2713"; /* Unicode check mark */
     font-size: 10rem;
     font-weight: bolder;
     color: green;
     position: absolute;
     top: 5px;
     left: 5px;
-}
-
-/* Make the cards responsive */
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
 }
 
 
