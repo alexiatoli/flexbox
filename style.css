@@ -1,94 +1,116 @@
-/* Global Styles */
+/* Reset some default styles */
+body, h1, h3, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #3a8dff;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* Header Styling */
+.masthead {
+  background-color: gold;
+  height: 75px;
+  padding-top: 10px;
+  font-size: x-large;
+  font-family: Montserrat, sans-serif;
 }
 
-main {
-    padding: 20px;
+.centeredText {
+  text-align: center;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #3a8dff;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.centered {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Flexbox Layout */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    padding-top: 20px;
+.site-title {
+  color: black;
 }
 
+/* Main Area Styling */
+.main-area {
+  border: 4px solid lightgray;
+  background-color: lightgoldenrodyellow;
+  padding: 20px;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -1em;
+  padding: 5px;
+}
+
+/* Card Styling */
 .card {
-    width: 100%;
-    max-width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  background: white;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  max-height: 300px;
+  flex: 1 1 200px;
+  position: relative; /* for positioning items inside */
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+.card a {
+  color: black;
+  text-decoration: none;
 }
 
 .card-content {
-    padding: 15px;
+  padding: 1.4em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
 }
 
-.card-content h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.pixHolder {
+  text-align: center;
+  background-color: pink;
+}
+
+.pixHolder img {
+  padding-top: 5px;
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
+}
+
+h3, ul {
+  position: relative;
+  top: -30px;
+}
+
+ul {
+  list-style-image: url("smaller_viking.gif");
 }
 
 .card-content p {
-    font-size: 0.9em;
-    margin-bottom: 15px;
+  font-size: 80%;
+  font-weight: bolder;
 }
 
-.card-content button {
-    padding: 10px;
-    background-color: #3a8dff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+/* Special Styling for Cards */
+[status="important"] {
+  border: 6px dashed green;
 }
 
-.card-content button:hover {
-    background-color: #2a6bbd;
+[status="done"]::before {
+  content: "\2713"; /* Unicode checkmark */
+  font-size: 10rem;
+  font-weight: bolder;
+  color: green;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .card-container {
-        justify-content: center;
-    }
-}
 
