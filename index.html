@@ -1,92 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Educational Flip Cards</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Flip Cards - Education</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header Section -->
+  <div class="masthead">
+    <h1 class="site-title">Interactive Flip Cards</h1>
+    <p class="subheading">Explore the world of learning through flip cards!</p>
+    <p><strong>Client:</strong> Mrs. Erin Higgins, Mt. Vernon Middle School, Fortville, Indiana</p>
+  </div>
 
-    <!-- Header Section -->
-    <header class="masthead">
-        <h1 class="site-title">Interactive Flip Cards</h1>
-        <p class="subheading">Explore the world of learning through flip cards!</p>
-    </header>
-
-    <!-- Main Section for Educational Resources -->
-    <div class="main-area">
-        <h2>Educational Resources</h2>
-
-        <div class="cards">
-            <!-- Math Flip Card -->
-            <div class="flip-card" data-card="math">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="math-image.jpg" alt="Math Resources">
-                        <h3>Math - Fractions & Decimals</h3>
-                    </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <li>Learn fractions and their conversions.</li>
-                            <li>Understand decimal places and operations.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Science Flip Card -->
-            <div class="flip-card" data-card="science">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="science-image.jpg" alt="Science Resources">
-                        <h3>Science - The Solar System</h3>
-                    </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <li>Explore planets, stars, and galaxies.</li>
-                            <li>Learn about space exploration.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Geography Flip Card -->
-            <div class="flip-card" data-card="geography">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="geography-image.jpg" alt="Geography Resources">
-                        <h3>Geography - Countries & Continents</h3>
-                    </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <li>Learn about different countries and cultures.</li>
-                            <li>Explore geographical landmarks.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- History Flip Card -->
-            <div class="flip-card" data-card="history">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="history-image.jpg" alt="History Resources">
-                        <h3>History - Ancient Civilizations</h3>
-                    </div>
-                    <div class="flip-card-back">
-                        <ul>
-                            <li>Study Egypt, Greece, and Rome.</li>
-                            <li>Understand the rise of empires.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- Main Area with Flexbox for Responsive Layout -->
+  <div class="main-area centered">
+    <div class="cards">
+      <!-- Flip Card for Math -->
+      <div class="flip-card" data-card="math">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://static.vecteezy.com/system/resources/previews/013/115/384/non_2x/cartoon-maths-elements-background-education-logo-vector.jpg" alt="Math Resources" />
+            <h3>Math - Fractions & Decimals</h3>
+          </div>
+          <div class="flip-card-back">
+            <ul>
+              <li>Learn fractions and their conversions.</li>
+              <li>Understand decimal places and operations.</li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </div>
 
+      <!-- Flip Card for Science -->
+      <div class="flip-card" data-card="science">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/299/163/small/pch4_k5pc_180308.jpg" alt="Science Resources" />
+            <h3>Science - The Solar System</h3>
+          </div>
+          <div class="flip-card-back">
+            <ul>
+              <li>Explore planets, stars, and galaxies.</li>
+              <li>Learn about space exploration.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card for Geography -->
+      <div class="flip-card" data-card="geography">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://as1.ftcdn.net/jpg/03/66/77/52/1000_F_366775227_6n6WV6muI5TaYWOrzc5eJJP6IKUYuZGr.jpg" alt="Geography Resources" />
+            <h3>Geography - Countries & Continents</h3>
+          </div>
+          <div class="flip-card-back">
+            <ul>
+              <li>Learn about different countries and their cultures.</li>
+              <li>Explore geographical landmarks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card for History -->
+      <div class="flip-card" data-card="history">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://media.istockphoto.com/id/1092170968/vector/open-book-with-history-doodles-and-lettering.jpg?s=612x612&w=0&k=20&c=SvXn0O25eHC8ARjwlcn83kahxjMGl2ti_DDFGozBKqg=" alt="History Resources" />
+            <h3>History - Ancient Civilizations</h3>
+          </div>
+          <div class="flip-card-back">
+            <ul>
+              <li>Study Egypt, Greece, and Rome.</li>
+              <li>Understand the rise of empires.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
 
 
 
