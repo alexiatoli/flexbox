@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Flip Cards - Education</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neely Board</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS goes here */
+    </style>
 </head>
+
 <body>
-  <!-- Header Section -->
-  <div class="masthead">
-    <h1 class="site-title">Interactive Flip Cards</h1>
-    <p class="subheading">Explore the world of learning through flip cards!</p>
-    <p><strong>Client:</strong> Mrs. Erin Higgins, Mt. Vernon Middle School, Fortville, Indiana</p>
-  </div>
+    <header class="masthead">
+        <h1 class="site-title centeredText">Neely Board</h1>
+    </header>
 
-  <!-- Main Area with Flexbox for Responsive Layout -->
-  <div class="main-area centered">
-    <div class="cards">
-      <!-- Flip Card for Math -->
-      <div class="flip-card" data-card="math">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="https://static.vecteezy.com/system/resources/previews/013/115/384/non_2x/cartoon-maths-elements-background-education-logo-vector.jpg" alt="Math Resources" />
-            <h3>Math - Fractions & Decimals</h3>
-          </div>
-          <div class="flip-card-back">
-            <ul>
-              <li>Learn fractions and their conversions.</li>
-              <li>Understand decimal places and operations.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <main class="main-area">
+        <div class="centered">
+            <section class="cards">
+                <!-- Card 1 -->
+                <article class="card">
+                    <a href="#">
+                        <div class="pixHolder">
+                            <img src="images/fractions.jpg" alt="fractions" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Math - Fractions</h3>
+                            <ul>
+                                <li>half, quarter?</li>
+                            </ul>
+                        </div>
+                    </a>
+                </article>
 
-      <!-- Flip Card for Science -->
-      <div class="flip-card" data-card="science">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/299/163/small/pch4_k5pc_180308.jpg" alt="Science Resources" />
-            <h3>Science - The Solar System</h3>
-          </div>
-          <div class="flip-card-back">
-            <ul>
-              <li>Explore planets, stars, and galaxies.</li>
-              <li>Learn about space exploration.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+                <!-- Card 2 -->
+                <article class="card" status="important">
+                    <a href="#">
+                        <div class="pixHolder">
+                            <img src="images/geometry.jpg" alt="geometry" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Math - Geometry</h3>
+                            <ul>
+                                <li>Circle, Square?</li>
+                            </ul>
+                        </div>
+                    </a>
+                </article>
 
-      <!-- Flip Card for Geography -->
-      <div class="flip-card" data-card="geography">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="https://as1.ftcdn.net/jpg/03/66/77/52/1000_F_366775227_6n6WV6muI5TaYWOrzc5eJJP6IKUYuZGr.jpg" alt="Geography Resources" />
-            <h3>Geography - Countries & Continents</h3>
-          </div>
-          <div class="flip-card-back">
-            <ul>
-              <li>Learn about different countries and their cultures.</li>
-              <li>Explore geographical landmarks.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+                <!-- Card 3 (Completed) -->
+                <article class="card" status="done">
+                    <a href="#">
+                        <div class="pixHolder">
+                            <img src="images/history.jpg" alt="history" />
+                        </div>
+                        <div class="card-content">
+                            <h3>History - Ancient Egypt</h3>
+                            <ul>
+                                <li>Pyramids, Pharaohs</li>
+                            </ul>
+                        </div>
+                    </a>
+                </article>
 
-      <!-- Flip Card for History -->
-      <div class="flip-card" data-card="history">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="https://media.istockphoto.com/id/1092170968/vector/open-book-with-history-doodles-and-lettering.jpg?s=612x612&w=0&k=20&c=SvXn0O25eHC8ARjwlcn83kahxjMGl2ti_DDFGozBKqg=" alt="History Resources" />
-            <h3>History - Ancient Civilizations</h3>
-          </div>
-          <div class="flip-card-back">
-            <ul>
-              <li>Study Egypt, Greece, and Rome.</li>
-              <li>Understand the rise of empires.</li>
-            </ul>
-          </div>
+                <!-- More Cards -->
+                <article class="card">
+                    <a href="#">
+                        <div class="pixHolder">
+                            <img src="images/science.jpg" alt="science" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Science - Physics</h3>
+                            <ul>
+                                <li>Newton's Laws</li>
+                            </ul>
+                        </div>
+                    </a>
+                </article>
+            </section>
         </div>
-      </div>
-    </div>
-  </div>
+    </main>
 </body>
+
 </html>
-
-
 
 
 
